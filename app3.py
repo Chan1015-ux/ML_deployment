@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 import re
-import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
@@ -25,7 +24,7 @@ kmeans_combined = joblib.load('kmeans_combined_model.pkl')
 spectral_clustering_model = joblib.load('spectral_clustering_model.pkl')
 hierarchical_clustering_model = joblib.load('hierarchical_clustering_model.pkl')
 
-# Initialize NLTK tools
+import nltk
 nltk.download('punkt')
 nltk.download('wordnet')
 nltk.download('stopwords')
