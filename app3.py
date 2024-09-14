@@ -26,9 +26,9 @@ spectral_clustering_model = joblib.load('spectral_clustering_model.pkl')
 hierarchical_clustering_model = joblib.load('hierarchical_clustering_model.pkl')
 
 # Initialize NLTK tools
-# nltk.download('punkt')
-# nltk.download('wordnet')
-# nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('stopwords')
 
 stop_words = set(stopwords.words('english'))
 
