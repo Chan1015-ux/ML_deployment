@@ -25,11 +25,11 @@ kmeans_combined = joblib.load('kmeans_combined_model.pkl')
 spectral_clustering_model = joblib.load('spectral_clustering_model.pkl')
 hierarchical_clustering_model = joblib.load('hierarchical_clustering_model.pkl')
 
+# Download required NLTK resources
+nltk.download('punkt', download_dir='/home/appuser/nltk_data')
+nltk.download('stopwords', download_dir='/home/appuser/nltk_data')
+nltk.download('wordnet', download_dir='/home/appuser/nltk_data')
 
-# Initialize NLTK tools
-nltk.download('punkt')
-nltk.download('wordnet')
-nltk.download('stopwords')
 
 stop_words = set(stopwords.words('english'))
 
