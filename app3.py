@@ -25,7 +25,7 @@ spectral_clustering_model = joblib.load('spectral_clustering_model.pkl')
 hierarchical_clustering_model = joblib.load('hierarchical_clustering_model.pkl')
 
 import nltk
-nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('wordnet')
 nltk.download('stopwords')
 
